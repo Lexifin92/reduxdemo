@@ -3,27 +3,6 @@ import { connect } from 'react-redux';
 import { isTemplateElement } from '@babel/types';
 import * as actionTypes from '../actions';
 class Counter extends Component {
-    // REDUXIN TAKIA NÄMÄ VOI JÄTTÄÄ POIS
-    // state = {
-    //     counter: 10
-    // }
-
-    // counterChangedHandler = (action, value) => {
-    //     switch (action) {
-    //         case 'addOne':
-    //             this.setState( ( prevState) => { return { counter: prevState.counter + 1 } } )
-    //             break;
-    //         case 'dropOne':
-    //             this.setState( ( prevState) => { return { counter: prevState.counter - 1 } } )
-    //             break;
-    //         case 'addValue':
-    //             this.setState( ( prevState) => { return { counter: prevState.counter + value } } )
-    //             break;
-    //         case 'dropValue':
-    //             this.setState( ( prevState) => { return { counter: prevState.counter - value } } )
-    //             break;
-    //     }
-    // }
 
     render() {
         return (
@@ -36,7 +15,6 @@ class Counter extends Component {
                     <button onClick={this.props.removeCounter}>Remove five</button>
 
                     <button onClick={this.props.onStoreCounter}> Store result </button>
-                    {/* <button onClick={this.props.onDeleteCounter}> Delete result </button> */}
 
 
                 <ul>
